@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polígrafo</title>
+    <link rel="stylesheet" href="poligrafo.css">
+</head>
+<body>
+    <div class="jogo">
+        <h1> Teste do polígrafo</h1>
+        <p> Responda às perguntas da investigação!</p>
+        <div class="cenario">
+            <div class="balao" id="pergunta">
+                Vamos começar o interrogatório?
+            </div>
+            <img src="https://pictures.tvinfo.net/pictures/00/46/7e/03/8e/99/83/a1/86/69/8e/78/3d/34/2b/91/large_atv_251217_1850_f62a2a0f_the_mentalist.jpg">
+        </div>
+        <h3 id="numero"> Pergunta 1 de 10 </h3>
+        <select id="resposta">
+            <option value="">selecione uma das resposta</option>
+            <option value="sim">sim</option>
+            <option value="nao">não</option>
+        </select>
+        <button onclick="responder()">responder</button>
+        <h2 id="resultado"></h2>
+        <button id="reiniciar" onclick="reiniciarjogo()">
+            reiniciar
+        </button>
+    </div>
+    <script src="poligrafohtml.js"></script>
+</body>
+</html>
